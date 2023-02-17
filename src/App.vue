@@ -1,7 +1,7 @@
 <template>
   <h1>{{title}}</h1>
 
-  <Modal header="Month of gifts!!!"/>
+  <Modal header="Month of gifts!!!" modalmsg="Nextus is the best tech company" />
 
 </template>
 

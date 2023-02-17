@@ -1,15 +1,15 @@
 <template>
     <div class="backdrop">
         <div class="modal">
-            <h1>Modal Title </h1>
-            <p>This is my modal</p>
+            <h1>{{header}} </h1>
+            <p>{{ modalmsg }}</p>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    props: ['header']
+    props: ['header','modalmsg']
 }
 </script>
 
