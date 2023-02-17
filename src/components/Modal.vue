@@ -31,7 +31,7 @@ export default {
 }
 
 h1 {
-    color: green;
+    color: white;
     font-style: normal;
 }
 .modal.sale {
