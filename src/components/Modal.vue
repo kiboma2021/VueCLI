@@ -7,6 +7,12 @@
     </div>
 </template>
 
+<script>
+export default {
+    props: ['header']
+}
+</script>
+
 <style scoped>
 .modal {
     width: 400px;
