@@ -1,7 +1,7 @@
 <template>
   <h1>{{title}}</h1>
 
-  <Modal header="Month of gifts!!!" modalmsg="Nextus is the best tech company" />
+  <Modal :header="header" :text="text" theme="sale" />
 
 </template>
 
@@ -13,7 +13,9 @@ export default {
   components: {Modal},
   data () {
     return {
-    title:'My first vue Application :)'
+    title:'My first vue Application :)',
+    header: 'Month of Gifts!!!',
+    text: 'Nextus is the best tech company'
     }
   },
   methods: {
