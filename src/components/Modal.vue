@@ -1,18 +1,14 @@
 <template>
     <div class="backdrop" >
         <div class="modal" :class="{sale: theme =='sale'}" >
-            <div class="modalHeader">
-                <h1>{{header}} </h1>
-                <span style="font-size:2rem" @click="closeModal">X</span>
-            </div>
-            <p>{{ text }}</p>
+            <slot></slot>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    props: ['header','text','theme'],
+    props: ['theme'],
     methods: {
         closeModal(){
             this.$emit('close')
@@ -45,11 +41,6 @@ h1 {
 .modal.sale {
     background-color: rgb(201, 43, 43);
     color: white;
-}
-
-.modalHeader {
-    display: flex;
-    justify-content: space-between;
 }
 
 </style>

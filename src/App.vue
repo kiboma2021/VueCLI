@@ -4,7 +4,13 @@
   <button @click="toggleModal">Open Modal</button>
 
   <div v-if="showModal">
-    <Modal :header="header" :text="text" theme="sale" @close="toggleModal"/>
+    <Modal theme="sale" @close="toggleModal">
+        <div class="modalHeader">
+              <h1>APA Insurance </h1>
+              <span style="font-size:2rem" @click="closeModal">X</span>
+          </div>
+          <p>Ensuring happiness</p>
+    </Modal>
   </div>
 
 </template>
@@ -50,5 +56,11 @@ export default {
 h1 {
   color: red;
   font-style: normal;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    color: white;
 }
 </style>
