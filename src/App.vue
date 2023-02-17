@@ -1,7 +1,5 @@
 <template>
-  <h2>{{title}}</h2>
-  <input type="text" ref="name">
-  <button @click="className">Click me</button>
+  <h1>{{title}}</h1>
 
   <Modal/>
 
@@ -35,5 +33,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h1 {
+  color: red;
+  font-style: normal;
 }
 </style>
