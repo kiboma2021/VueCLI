@@ -1,7 +1,7 @@
 <template>
   <h1>{{title}}</h1>
 
-  <Modal/>
+  <Modal header="Month of gifts!!!"/>
 
 </template>
 
